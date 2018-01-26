@@ -1,0 +1,41 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="id00" style="text-align:center">
+    <p align="center">
+        <button onclick="document.getElementById('id01').style.display='block'">CLICK TO LOGIN</button>
+      </p>
+</div>
+<div id="id01" class="modal" style="text-align:center">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Back</span>
+  <form name="loginform" class="modal-content" action="/action_page.php">
+    <div class="container">
+        <h1>
+            LOGIN PAGE
+          </h1>
+        <label for="username">USER-ID</label>
+        <input type="text" name="username" id="username" required/>
+        <br/>
+    </div>
+    <div>
+        <label for="password">PASSWORD</label>
+        <input type="password" name="password" id="password" required/>
+        <br/>
+    </div>
+    <button type="submit" >LOGIN</button>
+  </form>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.js">
+    // Get the modal
+    var modal = document.getElementById('id01');
+    var modal1 = document.getElementById('id02');
+    // When the user clicks anywhere outside of the modal, close it
+    if(event.target=modal)
+    {
+        $('#id00').hide();
+        $('#id01').show();
+    }
+    if(event.target=modal1)
+    {
+        getElementById('id02').display();
+    }
+    </script>
